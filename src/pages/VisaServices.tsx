@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Header from "@/components/Header";
 import {
   BookOpen,
   Briefcase,
@@ -72,6 +73,7 @@ const visaServices = [
 const VisaServices: React.FC = () => {
   return (
     <div className="bg-white text-gray-800">
+      <Header />
       {/* Header */}
       <section className="bg-blue-50 py-16 text-center">
         <motion.h1

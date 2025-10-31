@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Header from "@/components/Header";
 import {
   Briefcase,
   CheckCircle2,
@@ -65,11 +66,14 @@ const WhyChooseVS: React.FC = () => {
   ];
 
   return (
+    <div className="bg-white text-gray-800">
+      <Header />
     <section
       id="why-choose-vs"
       className="font-poppins bg-gray-50 py-20 px-6 text-gray-800"
     >
       {/* Header */}
+
       <div className="max-w-5xl mx-auto text-center mb-12">
         <motion.h2
           className="text-4xl font-bold text-blue-900 mb-3"
@@ -144,6 +148,7 @@ const WhyChooseVS: React.FC = () => {
         </div>
       </motion.div>
     </section>
+    </div>
   );
 };
 
